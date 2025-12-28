@@ -1,0 +1,77 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+#heading-div {
+  display: grid;
+  grid-template-areas: 
+  "h1 h1 img-1"
+  "p-1 . .";
+}
+h1 {
+  grid-area: h1;
+  margin-left: 10px;
+}
+#img-1 {
+  grid-area: img-1;
+  margin-right: 30px;
+}
+#p-1 {
+  grid-area: p-1;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-top: 3px; 
+}
+form {
+  text-align: center;
+}
+#i1 {
+  border-radius: 20px;
+  border: solid 1px;
+}
+#input-button {
+  margin-top: 10px;
+  background-color: lightgray;
+  border: solid 1px gray;
+  box-shadow: 5px 3px 2px #8888;
+}
+#input-button:hover {
+  font-style: italic;
+  font-weight: bold;
+}
+#task-list {
+  background-color: lightgray;
+  border: solid 1px lightgray;
+}
+#tasks-to-do-list {
+  list-style-type: circle;
+  color: red; 
+}
+#completed-tasks {
+  color: green
+}
+#clear-tasks-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+button {
+  background-color: lightgray;
+}
+h3 {
+  text-align: end;
+}
+#i2 {
+  border-radius: 20px;
+  border: solid 1px;
+}
+#input-button-2 {
+  margin-top: 10px;
+  background-color: lightgray;
+  border: solid 1px gray;
+  box-shadow: 5px 3px 2px #8888;
+  
+}
+#input-button-2:hover {
+  font-style: italic;
+  font-weight: bold;
+}
