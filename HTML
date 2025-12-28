@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+  </head>
+  <body>
+    <header>
+      <div id="heading-div">
+        <h1>To-do-list</h1>
+        <img id="img-1" src="https://media.istockphoto.com/id/1170650529/photo/completed-tasks-are-ticked-off-on-a-to-do-list.webp?a=1&b=1&s=612x612&w=0&k=20&c=EgZz6J610nssp8Ch6i-Aicu-BVPs_Yky2BfpU5XPB_M=" alt="to-do-list-pic" height="100" width="100">
+        <p id="p-1"><i>"I gotta get to this...LOL😉"</i></p>
+      </div>
+    </header>
+    <main>
+      <form>
+        <label for="i1"><b>Enter in what you need to do<i>!</i></b></label><br>
+        <input type="text" id="i1"><br>
+        <input type="button" id="input-button" value="Add to list" onclick="addTasks()">
+      </form>
+      <form id="form-2">
+        <label for="i2"><b>Enter in the tasks that're completed here<i>!</i></b></label>
+        <input type="text" id="i2"><br>
+        <input type="button" id="input-button-2" value="Add completed tasks" onclick="completedTasks()">
+      </form>
+      <br>
+      <div id="task-list">
+        <h2>Tasks</h2>
+        <ul id="tasks-to-do-list">
+        </ul>
+        <br>
+        <h2>Completed tasks:</h2>
+        <ul id="completed-tasks">
+        </ul>
+        <div id="clear-tasks-button">
+          <button onclick="clearTasks()">Clear tasks</button>
+        </div>
+        <script src="script.js"></script>
+      </div>
+    </main>
+    <footer>
+      <h3>Created by Sleepy</h3>
+    </footer>
+  </body>
+</html>
