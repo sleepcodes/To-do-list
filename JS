@@ -1,0 +1,22 @@
+function addTasks() {
+  const taskInput = document.getElementById("i1").value;   
+  const taskList = document.getElementById("tasks-to-do-list"); 
+  const newTaskItem = document.createElement("li");
+  if (taskInput !== "") {
+    newTaskItem.innerHTML = taskInput;
+    taskList.appendChild(newTaskItem);
+  }
+}
+
+function completedTasks() {
+  const completedTasksButton = document.getElementById("i2").value;
+  const completedTasksList = document.getElementById("completed-tasks");
+  const completedTasks = document.createElement("li");
+  completedTasks.innerHTML = completedTasksButton;
+  completedTasksList.appendChild(completedTasks);
+}
+
+function clearTasks() {
+  const deleteTasks = document.getElementById("tasks-to-do-list");
+  deleteTasks.innerHTML = "";
+}
